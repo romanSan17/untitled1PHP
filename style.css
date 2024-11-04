@@ -1,0 +1,45 @@
+header, footer {
+    color: black; /*teksti värv*/
+    background-color: orange; /*tausta värv*/
+    width: 50%; /*Laius*/
+    text-align: center;
+    border: 4pt solid yellow; /*piir - solid, dashed, dotted, double*/
+    padding: 1%;
+}
+
+main section {
+    background-color: yellow;
+    border: 3pt solid orange;
+    margin: 5px;
+    width: 40%;
+    padding: 1%;
+}
+
+main section h2 {
+    color: black;
+    font-variant: small-caps; /*corrected from 'front-variant' */
+}
+
+nav ul {
+    list-style-type: none; /*loetelu markerid*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /*kuidas näidata nav elemendid*/
+    background-color: red;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block; /*ühe realine navbar*/
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover { /*link fookuses*/
+    background-color: #ff9900;
+}
