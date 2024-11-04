@@ -42,7 +42,17 @@ echo "<pre>$tekst</pre>";
 echo "<pre>".trim($tekst)."</pre>";
 echo "<pre>".ltrim($tekst)."</pre>";
 echo "<pre>".rtrim($tekst)."</pre>";
-//iseseisvalt - tekst kui massiiv
+
 $tekst2='Põhitotus võetakse ära 11.11 kui võlgnevused ei ole parandatude';
 echo ltrim($tekst2);
-echo trim($tekst2, 'P, t..k');
+//echo trim($tekst2, 'P, t..k');
+
+//iseseisvalt - tekst kui massiiv
+echo "<br>";
+$massivitekst='Taiendav info opilase kohta';
+echo "1.täht - ".$massivitekst[0];
+echo "br";
+//kolmas sõna
+$sona=str_word_count($massivitekst, 1);
+print_r($sona);
+echo $sona[2];
